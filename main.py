@@ -1,3 +1,7 @@
+# Create a lambda function
+
+# Add this code to your lambda function code editor ######
+
 from urllib import request, parse
 import json
 import os
@@ -33,4 +37,8 @@ def lambda_handler(event, context):
         'body': json.dumps('Messege sent!')
     }
 
+##### Setting up a schedule to call your lambda function #####
+
+# Follow this tutuorial: 
+# https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html
 
